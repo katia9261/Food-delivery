@@ -1,0 +1,64 @@
+.displayTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.authBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px;
+  border-radius: 10px;
+  border-color: #606064;
+  border-style: solid;
+  width: 40vw;
+  height: 60vh;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.inputSignUp {
+  height: 30px;
+  border-bottom: 3;
+  border-color: #D0DBE1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: black;
+  margin: 5px;
+  text-align: center;
+}
+
+.btnSignUp, .bthGoogle {
+  border: none;
+  background-color: #E7CF61 ;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+}
+
+.bthGoogle {
+  border: none;
+  border: none;
+  background-color: #E7CF61;
+  border-radius: 20px;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+.redirectToLogin, .or {
+  color: black;
+  margin-top: 50px;
+}
+
