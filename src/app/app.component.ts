@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  public greetMess!: string;
+  public isHomePageViewable!: boolean;
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    this.greetMess = 'Parent Component';
+  }
+
+
 }
+
+
