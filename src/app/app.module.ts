@@ -10,28 +10,29 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { HomeComponent } from './auth/components/home/home.component';
 import { SignInComponent } from './auth/components/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/components/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './auth/components/forgot-password/forgot-password.component';
 import { VerifyEmailComponent } from './auth/components/verify-email/verify-email.component';
 import { AuthService } from './auth/shared/services/auth.service';
 import { HeaderComponent } from './auth/components/header/header.component';
+import { MenuComponent } from './auth/components/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
     HeaderComponent,
-
+    MenuComponent
   ],
 
   imports: [
-    BrowserModule,
+
+
+BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
