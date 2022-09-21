@@ -17,6 +17,8 @@ import { VerifyEmailComponent } from './auth/components/verify-email/verify-emai
 import { AuthService } from './auth/shared/services/auth.service';
 import { HeaderComponent } from './auth/components/header/header.component';
 import { MenuComponent } from './auth/components/menu/menu.component';
+import { SearchComponent } from './auth/components/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,12 @@ import { MenuComponent } from './auth/components/menu/menu.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     HeaderComponent,
-    MenuComponent
+    MenuComponent,
+    SearchComponent
   ],
 
   imports: [
-
-
-BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -40,6 +41,7 @@ BrowserModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    FormsModule
   ],
 
   providers: [AuthService],

@@ -7,6 +7,7 @@ import { ForgotPasswordComponent } from './auth/components/forgot-password/forgo
 import { VerifyEmailComponent} from './auth/components/verify-email/verify-email.component'
 // route guard
 import { AuthGuard } from './shared/guard/auth.guard';
+import { MenuComponent } from './auth/components/menu/menu.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'dashboard', component: HeaderComponent, canActivate: [AuthGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path:'search/:searchItem', component: MenuComponent}
 ];
 
 @NgModule({

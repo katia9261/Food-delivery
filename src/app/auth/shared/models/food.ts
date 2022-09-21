@@ -8,5 +8,4 @@ Foods{
   imageUrl!: string;
   cookTime!: string;
   origins!:string[];
-
 }
