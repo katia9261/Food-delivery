@@ -1,9 +1,9 @@
 <div>
   <input #s type="text"
         placeholder="Search food"
-        [(ngModel)]="searchItem"
+        (keyup.enter) = 'search(s.value)'
+        [value] = 'searchItem'
         name="searchItem"
-        (change)="search(s.value)"
   >
   <button (click)="search(s.value)">Search</button>
 </div>

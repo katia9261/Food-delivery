@@ -19,6 +19,7 @@ import { HeaderComponent } from './auth/components/header/header.component';
 import { MenuComponent } from './auth/components/menu/menu.component';
 import { SearchComponent } from './auth/components/search/search.component';
 import { FormsModule } from '@angular/forms';
+import { TagsComponent } from './auth/components/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     VerifyEmailComponent,
     HeaderComponent,
     MenuComponent,
-    SearchComponent
+    SearchComponent,
+    TagsComponent
   ],
 
   imports: [
