@@ -1,0 +1,34 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+ul li img {
+  width: 20rem;
+  height: 20rem;
+  border: 1px solid #606064;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #E7CF61;
+}
+
+li img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+a {
+  color: black;
+}
+
+a:hover {
+  background-color: #E7CF61;
+  color: white;
+}

@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   font-family: 'Cairo';
+  color: black;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
 }
