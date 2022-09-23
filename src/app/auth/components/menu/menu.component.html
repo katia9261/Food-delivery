@@ -7,6 +7,7 @@
     <div class="menu">
       <ul>
         <li *ngFor="let food of foods">
+          <a routerLink="/food/{{ food.id }}"></a>
           <img src="{{ food.imageUrl }}" alt="food image" />
           <div class="description">
             <div class="name">

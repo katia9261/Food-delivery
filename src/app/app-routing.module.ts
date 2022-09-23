@@ -8,7 +8,7 @@ import { VerifyEmailComponent} from './auth/components/verify-email/verify-email
 // route guard
 import { AuthGuard } from './shared/guard/auth.guard';
 import { MenuComponent } from './auth/components/menu/menu.component';
-
+import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -19,7 +19,8 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'menu', component:  MenuComponent, canActivate: [AuthGuard] },
   { path:'search/:searchItem', component: MenuComponent},
-  {path: 'tag/:tag', component: MenuComponent }
+  {path: 'tag/:tag', component: MenuComponent },
+  {path: 'food/:id', component: InfoProductComponent}
 ];
 
 @NgModule({

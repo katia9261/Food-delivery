@@ -20,6 +20,8 @@ import { MenuComponent } from './auth/components/menu/menu.component';
 import { SearchComponent } from './auth/components/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './auth/components/tags/tags.component';
+import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
+import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { TagsComponent } from './auth/components/tags/tags.component';
     HeaderComponent,
     MenuComponent,
     SearchComponent,
-    TagsComponent
+    TagsComponent,
+    CartPageComponent,
+    InfoProductComponent
   ],
 
   imports: [
