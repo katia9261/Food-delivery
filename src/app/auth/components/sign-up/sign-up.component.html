@@ -1,7 +1,7 @@
 <div class="displayTable">
   <div class="displayTableCell">
     <div class="authBlock">
-      <h3>Sign Up</h3>
+      <h3>Зареєструватися</h3>
 
       <div class="formGroup">
         <input
@@ -29,16 +29,16 @@
         <input
           type="button"
           class="btnSignUp"
-          value="Sign Up"
+          value="Зареєструватися"
           (click)="authService.SignUp(userEmail.value, userPwd.value)"
         />
       </div>
 
       <div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
+        <span class="or"><span class="orInner">Або</span></span>
       </div>
 
-      <!-- Continue with Google -->
+
       <div class="formGroup">
         <button
           type="button"
@@ -46,13 +46,13 @@
           (click)="authService.GoogleAuth()"
         >
           <i class="fab fa-google-plus-g"></i>
-          Continue with Google
+          Зареєструйтеся через Google
         </button>
       </div>
       <div class="redirectToLogin">
         <span
-          >Already have an account?
-          <span class="redirect" routerLink="/sign-in">Log In</span></span
+          >У вас вже є акаунт?
+          <span class="redirect" routerLink="/sign-in">Увійти</span></span
         >
       </div>
     </div>

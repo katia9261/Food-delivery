@@ -1,0 +1,6 @@
+.header {
+  position: sticky;
+}
+app-header {
+  position: fixed;
+}

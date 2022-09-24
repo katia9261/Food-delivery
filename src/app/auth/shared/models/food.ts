@@ -7,5 +7,5 @@ Foods{
   tags?:string[];
   imageUrl!: string;
   cookTime!: string;
-  origins!:string[];
+  description!:string[];
 }

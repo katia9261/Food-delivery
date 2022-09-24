@@ -12,7 +12,7 @@
     <span class="favorite {{food.favorite? '': 'not'}}">❤</span>
 
     <div class="origin">
-      <span *ngFor = 'let origin of food.origins'>
+      <span *ngFor = 'let origin of food.description'>
         {{origin}}
       </span>
     </div>
