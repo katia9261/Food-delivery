@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
@@ -23,9 +23,9 @@ import { TagsComponent } from './auth/components/tags/tags.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
-import { SendPageComponent } from './auth/components/send-page/send-page.component';
 import { HomePageComponent } from './auth/components/home-page/home-page.component';
 import { SendFormComponent } from './auth/components/send-form/send-form.component';
+
 
 @NgModule({
   declarations: [
@@ -41,13 +41,12 @@ import { SendFormComponent } from './auth/components/send-form/send-form.compone
     CartPageComponent,
     InfoProductComponent,
     ProblemSearchComponent,
-    SendPageComponent,
     HomePageComponent,
     SendFormComponent
   ],
 
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -55,7 +54,8 @@ import { SendFormComponent } from './auth/components/send-form/send-form.compone
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
   ],
 
   providers: [AuthService],
