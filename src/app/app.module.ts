@@ -25,6 +25,7 @@ import { InfoProductComponent } from './auth/components/info-product/info-produc
 import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
 import { SendPageComponent } from './auth/components/send-page/send-page.component';
 import { HomePageComponent } from './auth/components/home-page/home-page.component';
+import { SendFormComponent } from './auth/components/send-form/send-form.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { HomePageComponent } from './auth/components/home-page/home-page.compone
     InfoProductComponent,
     ProblemSearchComponent,
     SendPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    SendFormComponent
   ],
 
   imports: [

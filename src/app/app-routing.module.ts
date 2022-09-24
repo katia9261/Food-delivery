@@ -10,7 +10,7 @@ import { AuthGuard } from './shared/guard/auth.guard';
 import { MenuComponent } from './auth/components/menu/menu.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
-import { SendPageComponent } from './auth/components/send-page/send-page.component';
+import { SendFormComponent } from './auth/components/send-form/send-form.component';
 import { HomePageComponent } from './auth/components/home-page/home-page.component';
 
 const routes: Routes = [
@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: 'tag/:tag', component: MenuComponent },
   {path: 'food/:id', component: InfoProductComponent},
   {path: 'cart-page', component: CartPageComponent},
-  {path: 'send-page', component: SendPageComponent}
+  {path: 'send-form', component: SendFormComponent},
 ];
 
 @NgModule({
