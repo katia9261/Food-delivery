@@ -22,6 +22,7 @@ import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './auth/components/tags/tags.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
+import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InfoProductComponent } from './auth/components/info-product/info-produc
     SearchComponent,
     TagsComponent,
     CartPageComponent,
-    InfoProductComponent
+    InfoProductComponent,
+    ProblemSearchComponent
   ],
 
   imports: [

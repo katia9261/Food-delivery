@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Foods } from 'src/app/auth/shared/models/food';
 import { FoodService } from './../services/food/food.service';
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -14,7 +15,9 @@ export class MenuComponent implements OnInit {
 
   constructor(
     private foodService: FoodService,
-    activatedRoute: ActivatedRoute)
+    private cartService: CartService,
+    activatedRoute: ActivatedRoute,
+    private router: Router)
     { activatedRoute.params.subscribe((params) => {
       if (params['searchItem'])
         this.foods = this.foodService.getAllFoodsBySearchItem(params['searchItem']);
@@ -27,4 +30,6 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+
 }

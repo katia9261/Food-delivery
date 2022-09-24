@@ -7,12 +7,15 @@ import { data_list } from 'src/app/data';
 })
 export class FoodService {
 
-  constructor() { }
+  constructor() {}
 
   getAll():Foods[] {
     return data_list;
   }
 
+    getFoodById(id:number) : Foods {
+      return this.getAll().find(food => food.id == id)!;
+    }
 
     getAllFoodsBySearchItem(searchItem: string) {
       return this.getAll().filter(food => food.name.toLowerCase().includes(searchItem.toLowerCase()))

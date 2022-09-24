@@ -1,1 +1,40 @@
-<p>info-product works!</p>
+<app-header></app-header>
+<div class='container'>
+  <img [src]="food.imageUrl" alt='img-of-food'/>
+
+<div class="description">
+  <div>
+
+    <span class="name">
+      {{food.name}}
+    </span>
+
+    <span class="favorite {{food.favorite? '': 'not'}}">❤</span>
+
+    <div class="origin">
+      <span *ngFor = 'let origin of food.origins'>
+        {{origin}}
+      </span>
+    </div>
+
+    <div class="tags">
+      <app-tags [foodPageTags] = 'food.tags'></app-tags>
+    </div>
+
+    <div class="cookTime">
+      <span>Час очікування: {{food.cookTime}} мін.</span>
+    </div>
+
+    <div class="price">
+      <span>{{food.price | currency: '₴'}}</span>
+    </div>
+
+    <button class="addToCart" (click)="addToCart()">
+      Add to cart
+    </button>
+
+
+
+  </div>
+</div>
+</div>
