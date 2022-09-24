@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  text-align: center;
+}
+
+.container > * {
+  min-width: 25rem;
+  max-width: 40rem;
+
+}
+
+img {
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 30rem;
+  margin: 1rem;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  justify-content: center;
+  border-radius: 3rem;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.description .header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description .name {
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.description .favorite {
+  color: red;
+}
+
+.description .favorite.not {
+  color: #f1f1f1;
+}
+
+.description .origin {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.description .origin > span {
+  padding: .5rem;
+  margin: .5rem .5rem .5rem 0;
+  border-radius: 2rem;
+  background-color: #f1f1f1;
+}
+
+.description .cookTime {
+  margin: 1rem;
+}
+
+.description .cookTime span {
+  padding: .6rem 2rem .6rem 0;
+  border-radius: 10rem;
+  font-size: 1.3rem;
+
+}
+
+.description .price {
+  font-size: 1.8rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.description .price::before {
+  content: 'Price: ';
+  color: gray;
+  font-size: 1rem;
+}
+
+.addToCart {
+  color: white;
+  background-color: red;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+button:hover {
+  opacity: .7;
+  cursor: pointer;
+}

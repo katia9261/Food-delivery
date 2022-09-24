@@ -1,0 +1,56 @@
+<app-header></app-header>
+
+<div *ngIf="cart && !cart.items.length" class="directToMenu">
+  Перейти до меню та обрати блюдо
+  <a routerLink="/menu" class="menu">Меню</a>
+</div>
+
+<div *ngIf="cart && cart.items.length" class="container">
+  <ul>
+    Ваше замовлення:
+    <li *ngFor="let cartItem of cart.items">
+
+      <div class="cartItem">
+        <div>
+          <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name" />
+        </div>
+        <div>
+          <a routerLink="/food/{{ cartItem.food.id }}">
+            {{ cartItem.food.name }}
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <select
+          #quantitySelect
+          [value]="cartItem.quantity"
+          (change)="changeQuantity(cartItem, quantitySelect.value)"
+        >
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <!--PRICE DOESNT WORK PROPERLY-->
+      <div class="cartItemPrice">
+        {{ cartItem.price | currency: "₴" }}
+      </div>
+
+      <div>
+        <button class="btnRemove" (click)="removeFromCart(cartItem)">
+          Remove
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="checkout">
+    <div>
+      <div class="totalCount">{{ cart.totalCount }}</div>
+      <div class="totalPrice">{{ cart.totalPrice | currency: "₴" }}</div>
+    </div>
+
+    <a routerLink="/check">Перейти до оформлення замовлення</a>
+  </div>
+</div>
