@@ -12,6 +12,7 @@ export class CartService {
 
   private cart: Cart = this.getCartFromLocalStorage();
   private cartSubject: BehaviorSubject<Cart> = new BehaviorSubject(this.cart);
+  quantity: any;
   constructor() { }
 
   addToCart(food: Foods): void {

@@ -23,6 +23,8 @@ import { TagsComponent } from './auth/components/tags/tags.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
+import { SendPageComponent } from './auth/components/send-page/send-page.component';
+import { HomePageComponent } from './auth/components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ProblemSearchComponent } from './auth/components/problem-search/problem
     TagsComponent,
     CartPageComponent,
     InfoProductComponent,
-    ProblemSearchComponent
+    ProblemSearchComponent,
+    SendPageComponent,
+    HomePageComponent
   ],
 
   imports: [

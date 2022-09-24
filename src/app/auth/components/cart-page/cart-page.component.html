@@ -21,18 +21,21 @@
         </div>
       </div>
 
+      <button (click)="decreaseQuantity(cartItem, quantityInput.value)">-</button>
       <div>
-        <select
-          #quantitySelect
+        <input
+          #quantityInput
           [value]="cartItem.quantity"
-          (change)="changeQuantity(cartItem, quantitySelect.value)"
-        >
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
+          (change)="changeQuantity(cartItem, quantityInput.value)"
+          type="number"
+          min="0" oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
+          max="99" oninput="this.value = !!this.value && Math.abs(this.value) <= 99 ? Math.abs(this.value) : null"
+
+        />
       </div>
-      <!--PRICE DOESNT WORK PROPERLY-->
+      <button (click)="increaseQuantity(cartItem, quantityInput.value)">+</button>
+
+
       <div class="cartItemPrice">
         {{ cartItem.price | currency: "₴" }}
       </div>
@@ -51,6 +54,6 @@
       <div class="totalPrice">{{ cart.totalPrice | currency: "₴" }}</div>
     </div>
 
-    <a routerLink="/check">Перейти до оформлення замовлення</a>
+    <a routerLink="/send-page">Перейти до оформлення замовлення</a>
   </div>
 </div>
