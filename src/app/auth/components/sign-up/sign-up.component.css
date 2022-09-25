@@ -22,7 +22,7 @@ h3 {
   border-style: solid;
   width: 40vw;
   height: 60vh;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
@@ -47,9 +47,10 @@ input:focus {
   box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
 
-.btnSignUp, .bthGoogle {
+.btnSignUp,
+.bthGoogle {
   border: none;
-  background-color: #46681E;
+  background-color: #46681e;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
@@ -62,7 +63,7 @@ input:focus {
 .bthGoogle {
   border: none;
   border: none;
-  background-color: #46681E;
+  background-color: #46681e;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
@@ -72,7 +73,8 @@ input:focus {
   margin: 10px;
 }
 
-.redirectToLogin, .or {
+.redirectToLogin,
+.or {
   color: black;
   margin-top: 50px;
 }

@@ -11,7 +11,6 @@
 .container > * {
   min-width: 25rem;
   max-width: 40rem;
-
 }
 
 img {
@@ -28,7 +27,7 @@ img {
   flex-direction: column;
   flex: 1 0;
   justify-content: center;
-  text-align: center;;
+  text-align: center;
 }
 
 .descriptionItem .header {
@@ -44,7 +43,7 @@ img {
 }
 
 .descriptionItem .favorite {
-  color: #46681E;
+  color: #46681e;
   font-size: 30px;
   padding-left: 1rem;
 }
@@ -58,20 +57,20 @@ img {
 }
 
 .descriptionItem .description span {
-  padding: .6rem 2rem .6rem 0;
+  padding: 0.6rem 2rem 0.6rem 0;
   border-radius: 10rem;
   font-size: 1.1rem;
 }
 
 .descriptionItem .cookTime::before {
-  content: 'Час очікування: ';
-  color: #46681E;
+  content: "Час очікування: ";
+  color: #46681e;
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 .descriptionItem .cookTime span {
-  padding: .6rem 2rem .6rem 0;
+  padding: 0.6rem 2rem 0.6rem 0;
   border-radius: 10rem;
   font-size: 1.1rem;
 }
@@ -82,8 +81,8 @@ img {
 }
 
 .descriptionItem .price::before {
-  content: 'Ціна: ';
-  color: #46681E;
+  content: "Ціна: ";
+  color: #46681e;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -97,7 +96,7 @@ img {
 
 button {
   color: white;
-  background-color: #46681E;
+  background-color: #46681e;
   border: none;
   font-size: 1.2rem;
   padding: 2rem;
@@ -106,7 +105,7 @@ button {
 }
 
 button:hover {
-  opacity: .7;
+  opacity: 0.7;
   cursor: pointer;
 }
 

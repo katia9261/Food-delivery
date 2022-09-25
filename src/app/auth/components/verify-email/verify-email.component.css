@@ -17,7 +17,7 @@
   border-style: solid;
   width: 40vw;
   height: 60vh;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
@@ -45,7 +45,7 @@ P {
 
 .btnPrimary {
   border: none;
-  background-color: #46681E ;
+  background-color: #46681e;
   cursor: pointer;
   color: white;
   font-size: 1.2rem;

@@ -1,6 +1,10 @@
 <app-header></app-header>
 
-<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+<form
+  [formGroup]="FormData"
+  (ngSubmit)="onSubmit(FormData.value)"
+  class="formData"
+>
   <legend>Заповніть форму для доставки</legend>
   <fieldset>
     <input
@@ -14,15 +18,16 @@
     />
   </fieldset>
   <fieldset>
-    <input type="text" formControlName="Phone" placeholder="Номер" />
+    <input type="text" formControlName="Phone" placeholder="Номер" required />
   </fieldset>
   <fieldset>
     <input
       type="email"
       class="form-control"
       name="Email"
-      placeholder="Email"
+      placeholder="Пошта"
       formControlName="Email"
+      required
     />
   </fieldset>
   <fieldset>
@@ -36,12 +41,5 @@
       formControlName="Comment"
     ></textarea>
   </fieldset>
-  <button
-    type="submit"
-    type="submit"
-    class="btn btn-primary"
-
-  >
-    Замовити
-  </button>
+  <button type="submit" type="submit" class="btn btn-primary">Замовити</button>
 </form>

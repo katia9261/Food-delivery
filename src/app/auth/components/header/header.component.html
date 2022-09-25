@@ -1,29 +1,29 @@
 <header>
   <div class="headerContainer">
-
     <div class="logo">
       <img src="../../../../assets/avocado.png" alt="logo" class="logoImg" />
       <a href="/home-page" class="logoName">Avocado</a>
-  </div>
-
+    </div>
 
     <div class="containerMain">
       <nav class="infoUser">
-
         <div class="user" *ngIf="authService.userData as user">
-            <span>{{ user.displayName ? user.displayName : "User" }}</span>
+          <span>{{ user.displayName ? user.displayName : "User" }}</span>
         </div>
         <a href="/menu" class="menu">Меню</a>
         <div class="cartPage">
-          <a href="#" routerLink="/cart-page" >
-            <img src="../../../../assets/cart.png" alt="cart" class="cartLogo"/>
+          <a href="#" routerLink="/cart-page">
+            <img
+              src="../../../../assets/cart.png"
+              alt="cart"
+              class="cartLogo"
+            />
           </a>
-          <span>({{cartQuantity}})</span>
+          <span>({{ cartQuantity }})</span>
         </div>
 
         <a class="logOut" (click)="authService.SignOut()">Вийти</a>
       </nav>
-
     </div>
   </div>
 </header>
