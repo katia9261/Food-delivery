@@ -29,6 +29,7 @@ input {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin: 10px;
   text-align: center;
+  width: 20rem;
 }
 
 input:focus {
@@ -49,6 +50,7 @@ textarea {
   margin: 10px;
   resize: none;
   text-align: center;
+  width: 20rem;
 }
 
 textarea:focus {
