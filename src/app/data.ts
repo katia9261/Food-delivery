@@ -10,7 +10,7 @@ export const data_list: Foods[] = [
     tags:['Салат', 'Обід', 'Боул', "Риба"],
     imageUrl: '../../../../../assets/1.jpg',
     cookTime: '10-20',
-    description:['Теплий салат з рибою, авокадо та морськими водоростями'],
+    description:['Теплий салат з рибою та овочами'],
 },
 
   {

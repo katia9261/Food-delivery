@@ -7,28 +7,28 @@ div {
 }
 
 div input {
-  border-radius: 10rem 0  0 10rem;
+  border-radius: 2rem 0  0 2rem;
   border: none;
+  outline: none;
   height: 25px;
   width: 400px;
   background-color: #f1f1f1;
   padding: 1.2rem;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 500;
-  outline: none;
-
 }
 
 div button {
-  color: gray;
+  background-color: #46681E;
   width: 100px;
-  height: 75px;
-  font-size: 15px;
-  border-radius: 0 10rem 10rem 0;
+  height: 68px;
+  font-size: 20px;
+  border-radius: 0 2rem 2rem 0;
   border: none;
+  color: white;
 }
 
 div button:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   cursor: pointer;
 }

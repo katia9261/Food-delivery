@@ -1,6 +1,64 @@
-.header {
-  position: sticky;
+.homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-app-header {
-  position: fixed;
+
+.container {
+  position: relative;
+  text-align: center;
+  margin: 2rem;
+}
+
+.toMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logoInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.logo {
+  height: 200px;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.avocado {
+  margin-left: 1rem;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.tagline {
+  margin-left: 1rem;
+  font-size: 25px;
+}
+
+.foodImg {
+  height: 40vh;
+  border-radius: 2rem;
+}
+
+a {
+  color: white;
+  font-size: 40px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
