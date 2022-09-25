@@ -5,8 +5,8 @@ div {
 }
 
 div a {
-  padding: .3rem 1rem;
-  margin: .2rem .15rem;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
   background-color: #f1f1f1;
   color: black;
   width: auto;
@@ -16,5 +16,5 @@ div a {
 }
 
 div a:focus {
-  color: #46681E;
+  color: #46681e;
 }

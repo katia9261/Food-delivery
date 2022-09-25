@@ -3,61 +3,74 @@
 <div *ngIf="cart && !cart.items.length" class="directToMenu">
   Перейти до меню та обрати блюдо
   <div class="toMenu">
-    <img src="../../../../assets/home-page.JPG" alt="food" class="foodImg"/>
+    <img src="../../../../assets/home-page.JPG" alt="food" class="foodImg" />
     <a routerLink="/menu" class="menu">Меню</a>
   </div>
 </div>
 
 <div class="cartPage">
-<div *ngIf="cart && cart.items.length" class="container">
-  <ul>
-    <div class="order">Ваше замовлення:</div>
-    <li *ngFor="let cartItem of cart.items">
-      <div class="cartItem">
-      <div class="foodItem">
-        <div>
-          <img [src]="cartItem.food.imageUrl" [alt]="cartItem.food.name" class='itemImg'/>
-        </div>
-          <div class="itemName">
-            {{ cartItem.food.name }}
+  <div *ngIf="cart && cart.items.length" class="container">
+    <ul>
+      <div class="order">Ваше замовлення:</div>
+      <li *ngFor="let cartItem of cart.items">
+        <div class="cartItem">
+          <div class="foodItem">
+            <div>
+              <img
+                [src]="cartItem.food.imageUrl"
+                [alt]="cartItem.food.name"
+                class="itemImg"
+              />
+            </div>
+            <div class="itemName">
+              {{ cartItem.food.name }}
+            </div>
           </div>
-      </div>
 
-      <div class="buttons">
-      <button (click)="decreaseQuantity(cartItem, quantityInput.value)" class="btnDecrease">
-        -
-      </button>
-      <div>
-        <input
-          #quantityInput
-          [value]="cartItem.quantity"
-          (change)="changeQuantity(cartItem, quantityInput.value)"
-          type="number"
-          min="0"
-          oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
-          max="99"
-          oninput="this.value = !!this.value && Math.abs(this.value) <= 99 ? Math.abs(this.value) : null"
-        />
-      </div>
-      <button (click)="increaseQuantity(cartItem, quantityInput.value)" class="btnIncrease">
-        +
-      </button>
+          <div class="buttons">
+            <button
+              (click)="decreaseQuantity(cartItem, quantityInput.value)"
+              class="btnDecrease"
+            >
+              -
+            </button>
+            <div>
+              <input
+                #quantityInput
+                [value]="cartItem.quantity"
+                (change)="changeQuantity(cartItem, quantityInput.value)"
+                type="number"
+                min="0"
+                oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"
+                max="99"
+                oninput="this.value = !!this.value && Math.abs(this.value) <= 99 ? Math.abs(this.value) : null"
+              />
+            </div>
+            <button
+              (click)="increaseQuantity(cartItem, quantityInput.value)"
+              class="btnIncrease"
+            >
+              +
+            </button>
 
-      <div class="itemPrice">
-        {{ cartItem.price | currency: "₴" }}
-      </div>
+            <div class="itemPrice">
+              {{ cartItem.price | currency: "₴" }}
+            </div>
 
-      <div>
-        <button class="btnRemove" (click)="removeFromCart(cartItem)">
-          <img src="../../../../assets/icons8-trash.svg" alt="trash" class="trash">
-        </button>
-      </div>
-    </div>
-
-    </div>
-    </li>
-  </ul>
-</div>
+            <div>
+              <button class="btnRemove" (click)="removeFromCart(cartItem)">
+                <img
+                  src="../../../../assets/icons8-trash.svg"
+                  alt="trash"
+                  class="trash"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 
   <div class="checkout">
     <div>

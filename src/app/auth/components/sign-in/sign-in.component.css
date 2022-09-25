@@ -16,11 +16,12 @@
   border-style: solid;
   width: 40vw;
   height: 60vh;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
-.authBlock, .redirectToLogin {
+.authBlock,
+.redirectToLogin {
   color: black;
 }
 
@@ -51,7 +52,7 @@ input:focus {
 
 .btnLogIn {
   border: none;
-  background-color: #46681E ;
+  background-color: #46681e;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
@@ -64,7 +65,7 @@ input:focus {
 .bthGoogle {
   border: none;
   border: none;
-  background-color: #46681E;
+  background-color: #46681e;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;

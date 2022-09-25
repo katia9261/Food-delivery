@@ -1,26 +1,38 @@
 <div class="displayTable">
   <div class="displayTableCell">
-
     <div class="authBlock">
       <h3>Дякуємо за реєстрацію</h3>
 
       <div class="formGroup" *ngIf="authService.userData as user">
-        <p class="textCenter">Ми надіслали електронний лист із підтвердженням на адресу<br> <strong>{{user.email}}</strong>.</p>
-        <p class="textCenter">Перевірте свою електронну пошту та натисніть посилання, щоб підтвердити свою електронну адресу.</p>
+        <p class="textCenter">
+          Ми надіслали електронний лист із підтвердженням на адресу<br />
+          <strong>{{ user.email }}</strong
+          >.
+        </p>
+        <p class="textCenter">
+          Перевірте свою електронну пошту та натисніть посилання, щоб
+          підтвердити свою електронну адресу.
+        </p>
       </div>
 
       <div class="formGroup">
-        <button type="button" class="btnPrimary" (click)="authService.SendVerificationMail()">
+        <button
+          type="button"
+          class="btnPrimary"
+          (click)="authService.SendVerificationMail()"
+        >
           <i class="fas fa-redo-alt"></i>
           Resend Verification Email
         </button>
       </div>
-
     </div>
 
     <div class="redirectToLogin">
-      <span>Go back to?<span class="redirect" routerLink="/sign-in"> Sign in</span></span>
+      <span
+        >Go back to?<span class="redirect" routerLink="/sign-in">
+          Sign in</span
+        ></span
+      >
     </div>
-
   </div>
 </div>

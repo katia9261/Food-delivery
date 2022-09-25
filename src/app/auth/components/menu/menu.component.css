@@ -21,7 +21,6 @@ ul li img {
   overflow: hidden;
   margin-bottom: 0;
   padding-bottom: 0;
-
 }
 
 li img:hover {
@@ -35,7 +34,7 @@ li img:hover {
   text-align: center;
   align-items: center;
   width: 19rem;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-top: 0;
   padding-top: 0;
 }
@@ -46,7 +45,6 @@ li img:hover {
 
 .name {
   font-weight: bold;
-
 }
 
 a {
