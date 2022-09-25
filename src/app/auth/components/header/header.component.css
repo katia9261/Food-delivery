@@ -30,8 +30,7 @@ header {
 
 .cartLogo {
   height: 40px;
-  padding: 1rem;
-  padding-bottom: 0;
+  padding: 1rem .5rem 0 1rem;
 }
 
 div {
@@ -72,6 +71,7 @@ a {
 span {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
+  margin-right: 1rem;
 }
 
 
@@ -79,3 +79,9 @@ span {
   padding-right: 1rem;
 }
 
+.cartPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

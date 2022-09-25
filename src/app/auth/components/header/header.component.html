@@ -18,6 +18,7 @@
           <a href="#" routerLink="/cart-page" >
             <img src="../../../../assets/cart.png" alt="cart" class="cartLogo"/>
           </a>
+          <span>({{cartQuantity}})</span>
         </div>
 
         <a class="logOut" (click)="authService.SignOut()">Вийти</a>
