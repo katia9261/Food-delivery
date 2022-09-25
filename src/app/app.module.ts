@@ -25,7 +25,8 @@ import { InfoProductComponent } from './auth/components/info-product/info-produc
 import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
 import { HomePageComponent } from './auth/components/home-page/home-page.component';
 import { SendFormComponent } from './auth/components/send-form/send-form.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { ServicesService } from './auth/components/services/services.service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SendFormComponent } from './auth/components/send-form/send-form.compone
     InfoProductComponent,
     ProblemSearchComponent,
     HomePageComponent,
-    SendFormComponent
+    SendFormComponent,
+
   ],
 
   imports: [
@@ -56,9 +58,10 @@ import { SendFormComponent } from './auth/components/send-form/send-form.compone
     AngularFireDatabaseModule,
     FormsModule,
     RouterModule,
+    ReactiveFormsModule
   ],
 
-  providers: [AuthService],
+  providers: [AuthService, ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

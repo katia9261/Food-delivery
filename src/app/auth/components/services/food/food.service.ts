@@ -38,7 +38,7 @@ export class FoodService {
       {name: 'Смузі', count: 6},
       {name: 'Риба', count: 9},
       {name: "М'ясо", count: 3},
-      {name: 'Спрінгроли', count: 3},
+      {name: 'Спрінг-роли', count: 3},
       {name: 'Роли', count: 4},
       {name: 'Екзотика', count: 5},
     ]}

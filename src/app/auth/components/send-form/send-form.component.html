@@ -1,39 +1,47 @@
 <app-header></app-header>
 
-<form method="POST">
-  Заповніть форму для доставки
+<form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+  <legend>Заповніть форму для доставки</legend>
+  <fieldset>
+    <input
+      formControlName="Name"
+      type="text"
+      placeholder="Ім'я"
+      type="text"
+      class="form-control"
+      name="Name"
+      required
+    />
+  </fieldset>
+  <fieldset>
+    <input type="text" formControlName="Phone" placeholder="Номер" />
+  </fieldset>
+  <fieldset>
+    <input
+      type="email"
+      class="form-control"
+      name="Email"
+      placeholder="Email"
+      formControlName="Email"
+    />
+  </fieldset>
+  <fieldset>
+    <textarea formControlName="Address" placeholder="Адреса"></textarea>
+  </fieldset>
+  <fieldset>
+    <textarea
+      name="user_message"
+      placeholder="Залиш повідомлення"
+      class="form-control"
+      formControlName="Comment"
+    ></textarea>
+  </fieldset>
+  <button
+    type="submit"
+    type="submit"
+    class="btn btn-primary"
 
-    <fieldset>
-        <div>
-            <input id="numberName" type="text" placeholder="Ім'я" required>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div>
-            <input id="numberInput" type="text" placeholder="Номер" required>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div>
-            <input id="emailInput" type="email" placeholder="email" required>
-        </div>
-    </fieldset>
-
-    <fieldset>
-        <div>
-            <textarea id="addressInput" placeholder="Адреса" required></textarea>
-        </div>
-    </fieldset>
-
-
-    <fieldset>
-        <div>
-            <textarea id="messInput" placeholder="Залиш повідомлення"></textarea>
-        </div>
-    </fieldset>
-
-    <button type="submit">Замовити</button>
+  >
+    Замовити
+  </button>
 </form>
-
