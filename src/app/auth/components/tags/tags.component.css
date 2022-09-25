@@ -17,4 +17,5 @@ div a {
 
 div a:focus {
   color: #46681e;
+  font-weight: bold;
 }
