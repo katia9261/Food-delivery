@@ -1,5 +1,8 @@
 header {
   height: 5%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .headerContainer {
@@ -27,7 +30,7 @@ header {
 
 .cartLogo {
   height: 40px;
-  padding: 1rem;
+  padding: 1rem .5rem 0 1rem;
 }
 
 div {
@@ -36,10 +39,11 @@ div {
 
 a {
   color: white;
+  font-weight: bold;
 }
 
 .logoName {
-  padding: 1em;
+  padding: 1rem;
   font-weight: bold;
   text-align: start;
   font-size: 1.5rem;
@@ -59,9 +63,15 @@ a {
   text-align: end;
 }
 
+.menu {
+  padding: 1rem;
+  padding-right: 0;
+}
+
 span {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
+  margin-right: 1rem;
 }
 
 
@@ -69,3 +79,9 @@ span {
   padding-right: 1rem;
 }
 
+.cartPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 10vh;
   text-align: center;
 }
 
@@ -21,82 +22,97 @@ img {
   margin: 1rem;
 }
 
-.description {
+.descriptionItem {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1 0;
   justify-content: center;
-  border-radius: 3rem;
-  padding: 2rem;
-  color: black;
-  margin-left: 1rem;
+  text-align: center;;
 }
 
-.description .header {
+.descriptionItem .header {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
-.description .name {
+.descriptionItem .name {
   font-size: 2rem;
   font-weight: bold;
-
+  font-size: 50px;
 }
 
-.description .favorite {
-  color: red;
+.descriptionItem .favorite {
+  color: #46681E;
+  font-size: 30px;
+  padding-left: 1rem;
 }
 
-.description .favorite.not {
+.descriptionItem .favorite.not {
   color: #f1f1f1;
 }
 
-.description .origin {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1rem 0;
-}
-.description .origin > span {
-  padding: .5rem;
-  margin: .5rem .5rem .5rem 0;
-  border-radius: 2rem;
-  background-color: #f1f1f1;
+.descriptionItem .tags {
+  margin: 2rem;
 }
 
-.description .cookTime {
-  margin: 1rem;
-}
-
-.description .cookTime span {
+.descriptionItem .description span {
   padding: .6rem 2rem .6rem 0;
   border-radius: 10rem;
-  font-size: 1.3rem;
-
+  font-size: 1.1rem;
 }
 
-.description .price {
+.descriptionItem .cookTime::before {
+  content: 'Час очікування: ';
+  color: #46681E;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.descriptionItem .cookTime span {
+  padding: .6rem 2rem .6rem 0;
+  border-radius: 10rem;
+  font-size: 1.1rem;
+}
+
+.descriptionItem .price {
   font-size: 1.8rem;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0 1rem 1rem 0;
 }
 
-.description .price::before {
-  content: 'Price: ';
-  color: gray;
-  font-size: 1rem;
+.descriptionItem .price::before {
+  content: 'Ціна: ';
+  color: #46681E;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.addToCart {
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
   color: white;
-  background-color: red;
+  background-color: #46681E;
   border: none;
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10rem;
-  outline: none;
+  width: 20rem;
 }
 
 button:hover {
   opacity: .7;
   cursor: pointer;
+}
+
+.toMenu {
+  margin: 2rem;
+  border: 1px solid #570861;
+  border-radius: 15px;
+  width: 20rem;
 }

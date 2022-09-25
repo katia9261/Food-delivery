@@ -28,8 +28,19 @@ export class FoodService {
 
     getAllTag():Tag[] {
       return [
-      {name: 'Soup', count: 1},
-      {name: 'Bowl', count: 3},
+      {name: 'Сніданок', count: 3},
+      {name: 'Обід', count: 16},
+      {name: 'Боул', count: 4},
+      {name: 'Веган', count: 6},
+      {name: 'Салат', count: 1},
+      {name: 'Гарячі напої', count: 7},
+      {name: 'Лимонад', count: 3},
+      {name: 'Смузі', count: 6},
+      {name: 'Риба', count: 9},
+      {name: "М'ясо", count: 3},
+      {name: 'Спрінг-роли', count: 3},
+      {name: 'Роли', count: 4},
+      {name: 'Екзотика', count: 5},
     ]}
 
 }

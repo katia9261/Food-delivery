@@ -1,9 +1,0 @@
-* {
-  color: red;
-  background-color: black,
-}
-
-@font-face {
-  font-family: "Custom Font";
-  src: url("/assets/my-custom-font.woff") format("woff")
-}

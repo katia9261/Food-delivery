@@ -24,11 +24,24 @@ export class CartPageComponent implements OnInit {
     this.cartService.removeFromCart(cartItem.food.id);
   }
 
-  changeQuantity(cartItem:CartItem,quantityInString:string){
-    const quantity = parseInt(quantityInString);
-    this.cartService.changeQuantity(cartItem.food.id, quantity);
-    console.log(cartItem.food.id, quantity);
-
+  changeQuantity(cartItem:CartItem,  quantityInString:string) {
+    let quantity = parseInt(quantityInString);
+    this.cartService.changeQuantity(cartItem.food.id, quantity)
   }
+
+  increaseQuantity(cartItem: CartItem, quantityInString: string) {
+    let q = parseInt(quantityInString);
+    if (q < 99) {
+      this.cartService.changeQuantity(cartItem.food.id, ++q)
+    };
+  }
+
+  decreaseQuantity(cartItem: CartItem, quantityInString: string) {
+    let q = parseInt(quantityInString);
+    if (q > 0) {
+      this.cartService.changeQuantity(cartItem.food.id, --q)
+    };
+  }
+
 
 }

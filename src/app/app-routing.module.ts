@@ -10,25 +10,26 @@ import { AuthGuard } from './shared/guard/auth.guard';
 import { MenuComponent } from './auth/components/menu/menu.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
+import { SendFormComponent } from './auth/components/send-form/send-form.component';
+import { HomePageComponent } from './auth/components/home-page/home-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
-
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
+  { path: 'home-page', component: HomePageComponent},
   { path: 'menu', component:  MenuComponent, canActivate: [AuthGuard] },
   { path:'search/:searchItem', component: MenuComponent},
   {path: 'tag/:tag', component: MenuComponent },
   {path: 'food/:id', component: InfoProductComponent},
-  {path: 'cart-page', component: CartPageComponent}
+  {path: 'cart-page', component: CartPageComponent},
+  {path: 'send-form', component: SendFormComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-
-
   exports: [RouterModule],
 
 })

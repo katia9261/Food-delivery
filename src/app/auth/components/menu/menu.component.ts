@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Foods } from 'src/app/auth/shared/models/food';
 import { FoodService } from './../services/food/food.service';
 import { CartService } from '../services/cart/cart.service';
+import { ProblemSearchComponent } from '../problem-search/problem-search.component';
 
 @Component({
   selector: 'app-menu',

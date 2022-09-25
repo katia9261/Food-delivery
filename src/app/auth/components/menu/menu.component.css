@@ -1,21 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
 }
 
 ul li img {
   width: 20rem;
   height: 20rem;
-  border: 1px solid #606064;
   border-radius: 1rem;
   margin: 0.5rem;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-  color: #E7CF61;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
 }
 
 li img:hover {
@@ -23,12 +29,30 @@ li img:hover {
   cursor: pointer;
 }
 
+.descriptionItem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 19rem;
+  font-size: .9rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.name {
+  font-weight: bold;
+
+}
 
 a {
   color: black;
 }
 
 a:hover {
-  background-color: #E7CF61;
   color: white;
 }

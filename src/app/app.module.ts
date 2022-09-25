@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
@@ -23,6 +23,10 @@ import { TagsComponent } from './auth/components/tags/tags.component';
 import { CartPageComponent } from './auth/components/cart-page/cart-page.component';
 import { InfoProductComponent } from './auth/components/info-product/info-product.component';
 import { ProblemSearchComponent } from './auth/components/problem-search/problem-search.component';
+import { HomePageComponent } from './auth/components/home-page/home-page.component';
+import { SendFormComponent } from './auth/components/send-form/send-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ServicesService } from './auth/components/services/services.service';
 
 @NgModule({
   declarations: [
@@ -37,11 +41,14 @@ import { ProblemSearchComponent } from './auth/components/problem-search/problem
     TagsComponent,
     CartPageComponent,
     InfoProductComponent,
-    ProblemSearchComponent
+    ProblemSearchComponent,
+    HomePageComponent,
+    SendFormComponent,
+
   ],
 
   imports: [
-    BrowserModule,
+  BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -49,10 +56,12 @@ import { ProblemSearchComponent } from './auth/components/problem-search/problem
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
+    ReactiveFormsModule
   ],
 
-  providers: [AuthService],
+  providers: [AuthService, ServicesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
