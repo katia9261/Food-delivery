@@ -28,6 +28,5 @@ export class InfoProductComponent implements OnInit {
 
   addToCart(){
     this.cartService.addToCart(this.food);
-    //this.router.navigateByUrl('/cart-page');
   }
 }

@@ -42,7 +42,7 @@ export class AuthService {
         this.SetUserData(result.user);
         this.afAuth.authState.subscribe((user) => {
           if (user) {
-            this.router.navigate(['menu']);
+            this.router.navigate(['home-page']);
           }
         });
       })
@@ -78,7 +78,7 @@ export class AuthService {
     return this.afAuth
       .sendPasswordResetEmail(passwordResetEmail)
       .then(() => {
-        window.alert('Password reset email sent, check your inbox.');
+        window.alert('Електронний лист для зміни пароля надіслано, перевірте свою скриньку.');
       })
       .catch((error) => {
         window.alert(error);
@@ -103,7 +103,7 @@ export class AuthService {
     return this.afAuth
       .signInWithPopup(provider)
       .then((result) => {
-        this.router.navigate(['menu']);
+        this.router.navigate(['home-page']);
 
         this.SetUserData(result.user);
       })

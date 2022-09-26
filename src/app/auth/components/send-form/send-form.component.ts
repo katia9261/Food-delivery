@@ -35,7 +35,6 @@ export class SendFormComponent implements OnInit {
   }
 
   onSubmit(FormData: any) {
-    console.log(FormData);
     this.contact.PostMessage([FormData, this.cart.items]).subscribe(
       (response) => {
         location.href = 'https://mailthis.to/confirm';

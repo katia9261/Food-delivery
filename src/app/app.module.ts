@@ -48,7 +48,7 @@ import { ServicesService } from './auth/components/services/services.service';
   ],
 
   imports: [
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
