@@ -1,3 +1,22 @@
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="../project/src/assets/avocado.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Avocado</h3>
+  <p>The tastiest delivery for healthy food</p>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Food ordering app][product-screenshot]](../project/src/assets/screen.jpg)
+
+Welcome to Avocado Delivery, an application to choose healthy foods and order them. The idea is that you can register if you are a regular customer, choose any dishes from the menu, find out about composition and use the tags to make sure if it is vegetarian. Then go to the shopping cart, edit your order and fill out the shipping form.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
@@ -25,3 +44,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+[product-screenshot]: ../project/src/assets/screen.jpg
