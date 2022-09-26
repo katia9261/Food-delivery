@@ -1,6 +1,6 @@
 <br />
 <div>
-  <div align='center'>
+  <div align="center">
       <img src="./src/assets/avocado.png" alt="Logo" width="80" height="80">
   </div>
 
