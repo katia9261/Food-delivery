@@ -1,13 +1,14 @@
 <br />
 <div>
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="./src/assets/avocado.png" alt="Logo" width="80" height="80">
-  </a>
+  <div align='center'>
+      <img src="./src/assets/avocado.png" alt="Logo" width="80" height="80">
+  </div>
 
   <h3 align="center">Avocado</h3>
   <p align="center">The tastiest delivery for healthy food</p>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Food ordering app][product-screenshot]](./src/assets/screen.jpg)
@@ -15,7 +16,6 @@
 Welcome to Avocado Delivery, an application to choose healthy foods and order them. The idea is that you can register if you are a regular customer, choose any dishes from the menu, find out about composition and use the tags to make sure if it is vegetarian. Then go to the shopping cart, edit your order and fill out the shipping form.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 # Project
 
