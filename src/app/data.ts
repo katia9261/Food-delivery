@@ -131,7 +131,7 @@ export const data_list: Foods[] = [
     tags:['Веган', 'Обід', 'Риба', "М'ясо"],
     imageUrl: '../../../../../assets/12.jpg',
     cookTime: '20',
-    description:['Окрошка веган, з куркою або лососем на вибір'],
+    description:['Окрошка веган, з куркою або лососем'],
   },
 
   {
